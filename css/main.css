@@ -1,0 +1,184 @@
+/* COMMON */
+body {
+  font-size: 16px;
+  font-weight: 100;
+}
+* {
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+a, input, button, th, td,
+h1, h2, h3, h4, h5, h6,
+select, textarea, label {
+  color: rgba(0, 0, 0, .87);
+}
+.inner {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+/* HEADER */
+header .inner.head-area {
+  display: flex;
+  height: 60px;
+}
+header .logo {
+  width: 170px;
+  height: 30px;
+  padding: 15px 0;
+}
+header .logo a {
+  display: block;
+}
+header ul.g_menu {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 30px;
+}
+header ul.g_menu li{
+  margin-right: 15px;
+}
+header ul.g_menu li a{
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  color: #333;
+  padding: 19px 0 27px;
+}
+header ul.g_menu li a.on,
+header ul.g_menu li a:hover {
+  font-weight: 700;
+}
+header ul.g_menu li a.on::after,
+header ul.g_menu li a:hover::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  left: 0;
+  height: 2px;
+  border-bottom: 2px solid;
+}
+header ul.r_menu {
+  display: flex;
+}
+header ul.r_menu li {
+  position: relative;
+  margin: 0 10px;
+}
+
+header ul.r_menu li:first-child {
+  margin-left: 0;
+}
+header ul.r_menu li:last-child {
+  margin-right: 0;
+}
+header ul.r_menu li::after {
+  content: '';
+  width: 1px;
+  height: 10px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -5px;
+  background: #c2c2c2;
+}
+header ul.r_menu li:last-child::after {
+  display: none;
+}
+header ul.r_menu li a {
+  display: inline-block;
+  padding: 21px 0px 21px 0;
+  height: 20px;
+  font-size: 13px;
+  color: #666;
+  
+}
+
+/* GNB */
+header .gnb-area-wrap {
+  position: relative;
+  min-width: 1080px;
+  height: 80px;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+}
+header .gnb-area-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  z-index: -1;
+}
+header .gnb-area-wrap .inner{
+  display: flex;
+  height: 80px;
+}
+header .gnb-area-wrap .inner ul.gnb {
+  display: flex;
+}
+header .gnb-area-wrap .inner ul.gnb li {
+  margin-right: 30px;
+}
+header .gnb-area-wrap .inner ul.gnb li:last-child {
+  margin-right: 0;
+}
+header .gnb-area-wrap .inner ul.gnb li a {
+  display: inline-block;
+  padding: 30px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+header .gnb-area-wrap .inner ul.other-btns {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 6;
+  align-items: center;
+}
+header .gnb-area-wrap .inner ul.other-btns li a.login-btn {
+  display: block;
+  width: 82px;
+  height: 42px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+header .gnb-area-wrap .inner ul.other-btns li a.login-btn:hover {
+  background-color: #ebebeb;
+}
+header .gnb-area-wrap .inner ul.other-btns li a.search-btn {
+  background-image: url("../images/ico_gnb_search.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  font-size: 0;
+}
+header .gnb-area-wrap .inner ul.other-btns li a.all-menu-btn {
+  background-image: url("../images/ico_gnb_menu.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  font-size: 0;
+}
