@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>국민의 행복생활 파트너 KB국민카드</title>
   
+  <!-- Swipter -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/main.css">
 
@@ -34,7 +38,6 @@
       
     </div>
     <div class="gnb-area-wrap">
-
       <div class="inner">
 
         <ul class="gnb">
@@ -50,12 +53,196 @@
           <li><a href="javascript:void(0)" class="search-btn">통합검색</a></li>
           <li><a href="javascript:void(0)" class="all-menu-btn">전체메뉴</a></li>
         </ul>
-        
-      </div>
 
+      </div>
     </div>
 
   </header>
   <!-- //HEADER -->
+  <!-- MAIN -->
+  <main>
+    <section class="article">
+
+      <!-- SECTION BANNER -->
+      <div class="banner-wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item1" title="레고랜드 카드 Big 이벤트">
+                <div class="b-con">
+                  <p class="dep">레고랜드 오픈 기념</p>
+                  <p class="tit">
+                    레고랜드 카드 Big 이벤트
+                    <br />
+                    확인하세요!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-lego-object01.png" alt="캐릭터" class="ltr" />
+                  <img src="./images/pc-lego-object02.png" alt="캐릭터" class="rtl" />
+                  <img src="./images/pc-lego-object03.png" alt="레고랜드" class="ttb" />
+                  
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item2">
+                <div class="b-con">
+                  <p class="dep">두근두근 내 아이와 첫만남!</p>
+                  <p class="tit">
+                    첫만남이용권 사용하면
+                    <br />
+                    아이를 위한 Yellow Box!
+                </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-Yellowbox-object01.png" alt="" class="btt" />
+                  <img src="./images/pc-Yellowbox-object02.png" alt="" class="ttb" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item3">
+                <div class="b-con">
+                  <p class="dep">온가족이 즐거운 놀이공원가기!</p>
+                  <p class="tit">
+                    엄마아빠도 신나는
+                    <br />
+                    롯데월드 부산 OPEN!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-lotte-object01.png" alt="" class="ltr" />
+                  <img src="./images/pc-lotte-object02.png" alt="" class="rtl" />
+                  <img src="./images/pc-lotte-object03.png" alt="" class="btt" />
+                  
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item4">
+                <div class="b-con">
+                  <p class="dep">흩어진 내 돈, 한 곳으로!</p>
+                  <p class="tit">
+                    마이데이터가 처음이면
+                    <br />
+                    3천P에 경품까지!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-myData-object01.png" alt="" class="ttb" />
+                  <img src="./images/pc-myData-object02.png" alt="" class="ltr" />
+                  <img src="./images/pc-myData-object03.png" alt="" class="rtl" />
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:void(0)" class="banner-item5">
+                <div class="b-con">
+                  <p class="dep">ESG와 함께하는</p>
+                  <p class="tit">
+                    숙박대전 + TTBB
+                    <br />
+                    더 할인받고 떠나~봄!
+                  </p>
+                </div>
+                <div class="b-img">
+                  <img src="./images/pc-ttbb-object01.png" alt="" class="ttb" />
+                  <img src="./images/pc-ttbb-object02.png" alt="" class="btt" />
+                  <img src="./images/pc-ttbb-object03.png" alt="" class="rtl" />
+                </div>
+              </a>
+            </div>
+          </div>
+  
+          <div class="swiper-pages">
+            <div class="swiper-pagination"></div>
+            <div class="swiper_pause-btn">정지</div>
+          </div>
+          <div class="swiper-prev"></div>
+          <div class="swiper-next"></div>
+        </div>
+      </div>
+      <!-- //SECTION BANNER -->
+      <!-- Logout-wrap -->
+      <div class="logout-case">
+        <div class="tabs">
+  
+          <ul class="tabs__menu">
+            <li><a href="javascript:void(0)">PIN</a></li>
+            <li><a href="javascript:void(0)">KB Pay</a></li>
+            <li class="on"><a href="javascript:void(0)">아이디</a></li>
+            <li><a href="javascript:void(0)">공동인증서</a></li>
+          </ul>
+          <div class="tab_body">
+            <!-- tab.1 PIN -->
+            <div class="tabs_panel pin">
+              <div class="pin-txt">
+                <p>PIN 번호는 6자리 숫자만으로<br />
+                  로그인할 수 있는 안전한 인증 수단입니다.<br />
+                  (브라우저당 1명만 이용)
+                </p>
+                <div class="pos-area">
+                  <button type="button" class="btn btn--primary">PIN 설정</button>
+                </div>
+              </div>
+            </div>
+            <!-- //tab.1 PIN -->
+            <!-- tab.2 KB Pay -->
+            <div class="tabs_panel pay">
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">KB Pay 소개</a>
+              </div>
+            </div>
+            <!-- //tab.2 KB Pay -->
+            <!-- tabs.3 Ids -->
+            <div class="tabs_panel ids on">
+              <div class="form-field">
+                <div class="form-field__cont">
+                  <span class="form-field__obj">
+                    <input type="text" title="아이디 입력" placeholder="아이디" maxlength="12" />
+                    <button type="button" class="form-field__btn-reset"></button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-field form-field--pw">
+                <div class="form-field__cont">
+                  <span class="form-field__obj">
+                    <input type="password" title="비밀번호 입력" placeholder="비밀번호" maxlength="12" />
+                  </span>
+                  <input type="image" class="form-field__btn-mouse btn-virtualkey" src="./images/btn_virtualKey.png" alt="가상키보드" />
+                </div>
+              </div>
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">아이디 찾기</a>
+                <a href="javascript:void(0)" class="btn-setup">웹 비밀번호 변경</a>
+              </div>
+            </div>
+            <!-- //tabs.3 Ids -->
+            <!-- tabs.4 browser -->
+            <div class="tabs_panel browser">
+              <div class="pos-area">
+                <button type="button" class="btn btn--primary">
+                  로그인
+                </button>
+                <a href="javascript:void(0)" class="btn-setup">등록/해제</a>
+                <a href="javascript:void(0)" class="btn-setup">인증서 안내</a>
+              </div>
+            </div>
+            <!-- //tabs.4 browser -->
+          </div>
+  
+        </div>
+      </div>
+      <!-- //Login-wrap -->
+
+    </section>
+  </main>
 </body>
 </html>
