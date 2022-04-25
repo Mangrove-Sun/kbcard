@@ -49,17 +49,41 @@ const bannerPlay = function () {
 }
 
 
-// logoutWrap 탭변경
-const tabEls = document.querySelectorAll('.logout-case .tabs__menu li');
+// logoutTab 변경
+const logoutTabEls = document.querySelectorAll('.logout-case .tabs__menu li');
 const tabPanelEls = document.querySelectorAll('.logout-case .tab_body .tabs_panel');
-for(let i = 0; i < tabEls.length; i += 1){
-  tabEls[i].querySelector('a').addEventListener('click', function(e){
+
+for(let i = 0; i < logoutTabEls.length; i += 1){
+
+  logoutTabEls[i].querySelector('a').addEventListener('click', function(e){
     e.preventDefault();
-    for(let j = 0; j < tabEls.length; j++){
-      tabEls[j].classList.remove('on');
+
+    for(let j = 0; j < logoutTabEls.length; j += 1){
+      logoutTabEls[j].classList.remove('on');
       tabPanelEls[j].classList.remove('on');
     }
-    tabEls[i].classList.add('on');
+
+    logoutTabEls[i].classList.add('on');
     tabPanelEls[i].classList.add('on');
-    });
-  };
+    })
+
+  }
+
+
+  // recomTab 변경
+const recomTabEls = document.querySelectorAll('.article.full .recom-card .tabs__menu li');
+const cardPanelEls = document.querySelectorAll('.article.full .recom-card .tabs__body .tabs__panel');
+
+for (let i = 0; i < recomTabEls.length; i += 1) {
+  recomTabEls[i].querySelector('a').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    for (let j = 0; j < recomTabEls.length; j += 1) {
+      recomTabEls[j].classList.remove('on');
+      cardPanelEls[j].classList.remove('on');
+    }
+
+    recomTabEls[i].classList.add('on');
+    cardPanelEls[i].classList.add('on');
+  })
+}
