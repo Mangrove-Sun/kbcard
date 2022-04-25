@@ -704,7 +704,7 @@ section.article.full {
   display: block;
   width: 100%;
   padding-bottom: 40px;
-  background: linear-gradient(to bottom, #f9fafc, rgba(239, 242, 247, .87) 100%);
+  background-image: linear-gradient(to bottom, #f9fafc, rgba(239, 242, 247, .87) 100%);
 }
 section.article.full .quick-menu {
   display: flex;
@@ -866,3 +866,160 @@ section.article.full .recom-card  .tabs .tabs__body .tabs__panel .recom-card__bo
   min-height: 24px;
 }
 /* //RECOM CARD */
+/* FINANCE MENU */
+section.article.full .finance-menu {
+  width: 1080px;
+  margin: 24px auto 0;
+}
+section.article.full .finance-menu .finance-menu__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  position: relative;
+  height: 176px;
+}
+section.article.full .finance-menu .finance-menu__list .finance-menu__item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, .16);
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.cash,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.card {
+  grid-row: span 2;
+  grid-column: span 2;
+  width: 344px;
+  height: 176px;
+  padding: 24px 0 0 32px;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.cash::before {
+  content: '';
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ico-ca-48.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.card::before {
+  content: '';
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ico-card-1.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item p {
+  margin-top: 8px;
+  font-size: 15px;;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, .6);
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item p strong {
+  display: block;
+  font-weight: 100;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item .finance-menu__link {
+  display: inline-block;
+  position: relative;
+  margin-top: 22px;
+  padding-right: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item .finance-menu__link::before {
+  content: '>';
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  font-size: 15px;
+  text-align: center;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.credit > a,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.car > a,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.forward > a,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.ollis > a {
+  display: table-cell;
+  width: 167px;
+  height: 80px;
+  padding-left: 24px;
+  vertical-align: middle;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.credit a h2,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.car a h2,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.forward a h2,
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.ollis a h2 {
+  font-size: 15px;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.credit::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-personalalarm.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.car::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-car.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.forward::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-repaymentloan.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article.full .finance-menu .finance-menu__list li.finance-menu__item.ollis::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-delivery.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/* //FINANCE MENU */
