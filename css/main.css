@@ -697,3 +697,75 @@ section .logout-case .tabs .tab_body .tabs_panel.browser::before {
   background-size: 100% auto;
 }
 /* //TAB.4 BROWSER */
+
+
+/* QUICK MENU */
+section.article.full {
+  display: block;
+  width: 100%;
+  padding-bottom: 40px;
+  background: linear-gradient(to bottom, #f9fafc, rgba(239, 242, 247, .87) 100%);
+}
+section.article.full .quick-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1080px;
+  padding: 40px 0;
+  margin: 0 auto;
+  /* background-color: red; */
+
+}
+section.article.full .quick-menu li {
+  width: 100%;
+}
+section.article.full .quick-menu li a {
+  display: block;
+  flex-grow: 1;
+  padding-top: 58px;
+  line-height: 20px;
+  letter-spacing: 0;
+  font-size: 15px;
+  text-align: center;
+}
+section.article.full .quick-menu li a.quick-menu_item01 {
+  background-image: url("../images/ico-write.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item02 {
+  background-image: url("../images/ico-eshopping.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item03 {
+  background-image: url("../images/ico-checkpaper.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item04 {
+  background-image: url("../images/ico-coin-48.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item05 {
+  background-image: url("../images/ico-call-48.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item06 {
+  background-image: url("../images/ico-cardregister-48.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item07 {
+  background-image: url("../images/ico-point-48.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+section.article.full .quick-menu li a.quick-menu_item08 {
+  background-image: url("../images/ico-certificate-48.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+/* //QUICK MENU */
