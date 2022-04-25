@@ -221,7 +221,7 @@ header .gnb-area-wrap .inner ul.other-btns li a.all-menu-btn {
 
 
 /* SECTION BANNER */
-section.article {
+section.article .wrap {
   display: flex;
   justify-content: space-between;
 }
@@ -1023,3 +1023,71 @@ section.article.full .finance-menu .finance-menu__list li.finance-menu__item.oll
   background-size: 100% auto;
 }
 /* //FINANCE MENU */
+/* MICROSITE LIST */
+section.article .microsite-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 64px;
+  background-color: #f9fafc;
+  border-radius: 16px;
+}
+section.article .microsite-list a {
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 64px;
+  text-align: center;
+}
+section.article .microsite-list a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 24px;
+  margin: auto 0;
+  background-color: rgba(0, 0, 0, .16);
+}
+section.article .microsite-list a:first-child::before {
+  display: none;
+}
+section.article .microsite-list a span {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+section.article .microsite-list a.microsite-list__stashop span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-1-specialstore.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article .microsite-list a.microsite-list__goldlife span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  background-image: url("../images/ico-1-happy.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* //MICROSITE LIST */

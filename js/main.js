@@ -54,7 +54,6 @@ const logoutTabEls = document.querySelectorAll('.logout-case .tabs__menu li');
 const tabPanelEls = document.querySelectorAll('.logout-case .tab_body .tabs_panel');
 
 for(let i = 0; i < logoutTabEls.length; i += 1){
-
   logoutTabEls[i].querySelector('a').addEventListener('click', function(e){
     e.preventDefault();
 
@@ -66,7 +65,6 @@ for(let i = 0; i < logoutTabEls.length; i += 1){
     logoutTabEls[i].classList.add('on');
     tabPanelEls[i].classList.add('on');
     })
-
   }
 
 
