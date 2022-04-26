@@ -1171,7 +1171,7 @@ section.article .benefit-area .benefit-list > a p.benefit-list__desc {
   line-height: 1.6;
 }
 section.article .benefit-area .benefit-list .service-list {
-  width: calc((100% 2 (24px * 3)) / 4);
+  width: calc((100% - (24px * 3)) / 4);
   height: 152px;
   padding: 24px 0 0 24px;
   background-color: #f9fafc;
@@ -1179,6 +1179,7 @@ section.article .benefit-area .benefit-list .service-list {
 }
 section.article .benefit-area .benefit-list .service-list > a {
   display: block;
+  width: 100%;
   position: relative;
   margin-top: 16px;
   padding-left: 40px;
@@ -1226,3 +1227,144 @@ section.article .benefit-area .benefit-list .service-list > a.service-list__noti
   background-size: 100% auto;
 }
 /* //BENEFIT AREA */
+/* NOTICE AREA */
+section.article .notice-area {
+  width: calc(50% - 12px);
+}
+section.article .notice-area .notice-area__tit {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+section.article .notice-area .notice-area__list {}
+section.article .notice-area .notice-area__list {}
+section.article .notice-area .notice-area__list li {
+  display: flex;
+  overflow: hidden;
+  margin-top: 8px;
+  line-height: 1.6;
+}
+section.article .notice-area .notice-area__list li span{
+  width: 100px;
+}
+section.article .notice-area .notice-area__list li a{
+  width: calc(100% - 100px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* //NOTICE AREA */
+/* GUIDE AREA */
+section.article .guide-area {
+  width: calc(50% - 12px);
+}
+section.article .guide-area .tabs {
+
+}
+section.article .guide-area .tabs .tabs__menu {
+  display: flex;
+}
+section.article .guide-area .tabs .tabs__menu li {
+  position: relative;
+  margin-right: 24px;
+}
+section.article .guide-area .tabs .tabs__menu li a {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.45;
+}
+section.article .guide-area .tabs .tabs__menu li.on a,
+section.article .guide-area .tabs .tabs__menu li a:hover {
+  font-weight: 400;
+  border-bottom: 3px solid rgba(0, 0, 0, .87);
+}
+section.article .guide-area .tabs .tabs__body {
+  position: relative;
+  padding-top: 16px;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel {
+  display: none;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 32px;
+  width: 64px;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel.on {
+  display: block;
+  position: relative;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 20px 32px;
+  background-color: #f9fafc;
+  border-radius: 16px;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link.consumer::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ico-consumer-48.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 4;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link.faq::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ico-faq-48.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 4;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link.foreign::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 48px;
+  height: 48px;
+  background-image: url("../images/ico-foreign-48.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 4;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link h2{
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link p{
+  padding-top: 6px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, .6);
+}
+/* //GUIDE AREA */
