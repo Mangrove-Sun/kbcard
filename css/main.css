@@ -5,7 +5,6 @@ body {
 }
 * {
   box-sizing: border-box;
-  line-height: 1.6;
 }
 a, input, button, th, td,
 h1, h2, h3, h4, h5, h6,
@@ -1089,5 +1088,141 @@ section.article .microsite-list a.microsite-list__goldlife span::before {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
 /* //MICROSITE LIST */
+/* BENEFIT AREA */
+section.article .benefit-area {
+  margin-top: 40px;
+}
+section.article .benefit-area .benefit-list {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+section.article .benefit-area .benefit-list > a {
+  display: block;
+  position: relative;
+  width: calc((100% - (24px * 3)) / 4);
+  height: 152px;
+  letter-spacing: -1px;
+  margin-right: 24px;
+  padding: 24px 0 0 24px;
+  border-radius: 16px;
+}
+section.article .benefit-area .benefit-list > a.benefit-list__event {
+  background-image: linear-gradient(119deg, #dbecff, #ebf6ff 100%);
+}
+section.article .benefit-area .benefit-list > a.benefit-list__plan {
+  background-image: linear-gradient(119deg, #eaebff, #f1f2ff 100%);
+}
+section.article .benefit-area .benefit-list > a.benefit-list__sale {
+  background-image: linear-gradient(119deg, #ffdf74, #ffebb2 100%);
+}
+section.article .benefit-area .benefit-list > a.benefit-list__event::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 120px;
+  height: 104px;
+  margin-top: -52px;
+  background-image: url("../images/img-main-brn-02.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+section.article .benefit-area .benefit-list > a.benefit-list__plan::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 120px;
+  height: 104px;
+  margin-top: -52px;
+  background-image: url("../images/img-main-brn-03.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article .benefit-area .benefit-list > a.benefit-list__sale::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 120px;
+  height: 104px;
+  margin-top: -52px;
+  background-image: url("../images/img-main-brn-01.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article .benefit-area .benefit-list > a strong.benefit-list__tit {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+section.article .benefit-area .benefit-list > a p.benefit-list__desc {
+  padding-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+section.article .benefit-area .benefit-list .service-list {
+  width: calc((100% 2 (24px * 3)) / 4);
+  height: 152px;
+  padding: 24px 0 0 24px;
+  background-color: #f9fafc;
+  border-radius: 16px;
+}
+section.article .benefit-area .benefit-list .service-list > a {
+  display: block;
+  position: relative;
+  margin-top: 16px;
+  padding-left: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+section.article .benefit-area .benefit-list .service-list > a:first-child {
+  margin-top: 0;
+}
+section.article .benefit-area .benefit-list .service-list > a.service-list__pay::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico-apt-48.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article .benefit-area .benefit-list .service-list > a.service-list__foreign::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico-1-airline2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+section.article .benefit-area .benefit-list .service-list > a.service-list__notice::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/ico-1-alarm.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+/* //BENEFIT AREA */
