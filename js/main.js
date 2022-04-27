@@ -49,7 +49,7 @@ const bannerPlay = function () {
 }
 
 
-// logoutTab 변경
+// logoutCase Tab변경
 const logoutTabEls = document.querySelectorAll('.logout-case .tabs__menu li');
 const tabPanelEls = document.querySelectorAll('.logout-case .tab_body .tabs_panel');
 
@@ -68,7 +68,7 @@ for(let i = 0; i < logoutTabEls.length; i += 1){
   }
 
 
-  // recomTab 변경
+  // recomCard Tab변경
 const recomTabEls = document.querySelectorAll('.article.full .recom-card .tabs__menu li');
 const cardPanelEls = document.querySelectorAll('.article.full .recom-card .tabs__body .tabs__panel');
 
@@ -83,5 +83,24 @@ for (let i = 0; i < recomTabEls.length; i += 1) {
 
     recomTabEls[i].classList.add('on');
     cardPanelEls[i].classList.add('on');
+  })
+}
+
+
+// guideArea Tab변경
+const guideTabEls = document.querySelectorAll('.article .wrap .guide-area .tabs__menu li');
+const guidePanelEls = document.querySelectorAll('.article .wrap .guide-area .tabs__body .tabs__panel');
+
+for (let i = 0; i < guideTabEls.length; i += 1) {
+  guideTabEls[i].querySelector('a').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    for (let j = 0; j < guideTabEls.length; j += 1) {
+      guideTabEls[j].classList.remove('on');
+      guidePanelEls[j].classList.remove('on');
+    }
+
+    guideTabEls[i].classList.add('on');
+    guidePanelEls[i].classList.add('on');
   })
 }

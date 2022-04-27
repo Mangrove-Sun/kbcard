@@ -1489,20 +1489,37 @@ footer .footer-area ul.footer-menu li a {
 }
 footer .footer-area address {
   display: flex;
+  align-items: center;
   margin-top: 20px;
-  color: #666;
+  /* color: #666; */
 }
 footer .footer-area address span {
   display: inline-block;
+  position: relative;
   margin-left: 10px;
   font-size: 14px;
   line-height: 20px;
+  opacity: .6;
+}
+footer .footer-area address span::before {
+  content: '';
+  display: inline-block;
+  left: 0;
+  width: 1px;
+  height: 14px;
+  margin-right: 10px;
+  text-align: middle;
+  background-color: #dcdcdc;
 }
 footer .footer-area address > span:first-child {
   margin-left: 0;
 }
-footer .footer-area address a {
-  color: rgba(0, 0, 0, .87);
+footer .footer-area address > span:first-child:before {
+  display: none;
+}
+footer .footer-area address a:hover span{
+  color: #000;
+  opacity: 1;
 }
 footer .footer-area p.copyright {
   margin-top: 8px;
