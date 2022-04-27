@@ -343,6 +343,22 @@ section .banner-wrap .swiper-container .swiper-slide {
 }
 
 /* BANNER COMMON */
+section .banner-wrap .swiper-container .swiper-slide.swiper-slide-active .b-img img.act.ttb{
+  transform: translateY(0);
+  opacity: 1;
+}
+section .banner-wrap .swiper-container .swiper-slide.swiper-slide-active .b-img img.act.btt{
+  transform: translateY(0);
+  opacity: 1;
+}
+section .banner-wrap .swiper-container .swiper-slide.swiper-slide-active .b-img img.act.ltr{
+  transform: translateX(0);
+  opacity: 1;
+}
+section .banner-wrap .swiper-container .swiper-slide.swiper-slide-active .b-img img.act.rtl{
+  transform: translateX(0);
+  opacity: 1;
+}
 section .banner-wrap .swiper-container a {
   display: flex;
   width: 100%;
@@ -375,6 +391,9 @@ section .banner-wrap .swiper-container a .b-img {
   display: block;
   width: 30%;
 }
+section .banner-wrap .swiper-container a .b-img img {
+  transition: all 1s;
+}
 
 /* BANNER 01 */
 section .banner-wrap .swiper-container a.banner-item1 {
@@ -391,12 +410,16 @@ section .banner-wrap .swiper-container a.banner-item1 .b-img .ttb {
   right: 18px;
   bottom: 96px;
   width: 214px;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item1 .b-img .btt {
   position: absolute;
   left: -50px;
   bottom: 24px;
   width: 220px;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 /* BANNER 02 */
@@ -414,6 +437,8 @@ section .banner-wrap .swiper-container a.banner-item2 .b-img .ltr {
   right: 210px;
   bottom: 33px;
   width: 64px;
+  transform: translateX(-100%);
+  opacity: 0;
   z-index: 1;
 }
 section .banner-wrap .swiper-container a.banner-item2 .b-img .rtl {
@@ -421,6 +446,8 @@ section .banner-wrap .swiper-container a.banner-item2 .b-img .rtl {
   right: 38px;
   bottom: 33px;
   width: 93px;
+  transform: translateX(100%);
+  opacity: 0;
   z-index: 1;
 }
 section .banner-wrap .swiper-container a.banner-item2 .b-img .ttb {
@@ -428,6 +455,8 @@ section .banner-wrap .swiper-container a.banner-item2 .b-img .ttb {
   right: 46px;
   bottom: 56px;
   width: 214px;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 /* BANNER 03 */
@@ -442,18 +471,24 @@ section .banner-wrap .swiper-container a.banner-item3 .b-img .ltr {
   right: 190px;
   bottom: 15px;
   width: 84px;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item3 .b-img .rtl {
   position: absolute;
   right: 40px;
   bottom: 39px;
   width: 166px;
+  transform: translateX(100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item3 .b-img .btt {
   position: absolute;
   right: 14px;
   bottom: 155px;
   width: 267px;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
 /* BANNER 04 */
@@ -471,18 +506,24 @@ section .banner-wrap .swiper-container a.banner-item4 .b-img .ttb {
   right: 42px;
   bottom: 89px;
   width: 246px;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item4 .b-img .ltr {
   position: absolute;
   left: -142px;
   bottom: 30px;
   width: 210px;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item4 .b-img .rtl {
   position: absolute;
   top: 49px;
   right: 45px;
   width: 185px;
+  transform: translateX(100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container .banner-item5 {
   background-image: url("../images/pc-ttbb-bg.png");
@@ -495,6 +536,8 @@ section .banner-wrap .swiper-container a.banner-item5 .b-img .ttb {
   right: 30px;
   bottom: 169px;
   width: 217px;
+  transform: translateY(-100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item5 .b-img .btt {
   position: absolute;
@@ -502,12 +545,16 @@ section .banner-wrap .swiper-container a.banner-item5 .b-img .btt {
   bottom: 35px;
   width: 210px;
   z-index: 1;
+  transform: translateY(100%);
+  opacity: 0;
 }
 section .banner-wrap .swiper-container a.banner-item5 .b-img .rtl {
   position: absolute;
   right: 25px;
   bottom: 46px;
   width: 116px;
+  transform: translateX(100%);
+  opacity: 0;
 }
 
 
@@ -1529,6 +1576,7 @@ footer .footer-area p.copyright {
 }
 footer .footer-area .footer-bottom {
   display: flex;
+  align-items: flex-end;
   margin-top: 32px;
 }  
 footer .footer-area .awards-area {  
@@ -1620,6 +1668,7 @@ footer .footer-area .awards-area ul.awards-area__list li span strong {
 }
 footer .footer-area .sns-area {
   width: 142px;
+  margin-right: 20px;
 }
 footer .footer-area .sns-area .sns-area__list {
   display: flex;
