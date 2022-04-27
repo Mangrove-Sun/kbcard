@@ -68,7 +68,7 @@ for(let i = 0; i < logoutTabEls.length; i += 1){
   }
 
 
-  // recomCard Tab변경
+// recomCard Tab변경
 const recomTabEls = document.querySelectorAll('.article.full .recom-card .tabs__menu li');
 const cardPanelEls = document.querySelectorAll('.article.full .recom-card .tabs__body .tabs__panel');
 

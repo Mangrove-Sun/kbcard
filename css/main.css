@@ -473,6 +473,7 @@ section .banner-wrap .swiper-container a.banner-item3 .b-img .ltr {
   width: 84px;
   transform: translateX(-100%);
   opacity: 0;
+  z-index: 1;
 }
 section .banner-wrap .swiper-container a.banner-item3 .b-img .rtl {
   position: absolute;
@@ -516,6 +517,7 @@ section .banner-wrap .swiper-container a.banner-item4 .b-img .ltr {
   width: 210px;
   transform: translateX(-100%);
   opacity: 0;
+  z-index: 1;
 }
 section .banner-wrap .swiper-container a.banner-item4 .b-img .rtl {
   position: absolute;
