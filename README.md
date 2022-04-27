@@ -28,7 +28,7 @@
 
 # 사이트
 - 참고 사이트: [국민의 행복생활 파트너 KB국민카드](https://card.kbcard.com/CMN/DVIEW/HOAMCXPRIZZC0002)
-- 클론 사이트: 
+- 클론 사이트: https://legendary-wisp-7433e4.netlify.app/
 
 # 사용 스택
 - HTML
