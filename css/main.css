@@ -1368,3 +1368,76 @@ section.article .guide-area .tabs .tabs__body .tabs__panel a.guide-area__link p{
   color: rgba(0, 0, 0, .6);
 }
 /* //GUIDE AREA */
+/* CUSTOMER AREA */
+section.article .customer-area {
+  width: 828px;
+}
+section.article .customer-area .customer-area__tit {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+section.article .customer-area .customer-area__list {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 828px;
+}
+section.article .customer-area .customer-area__list li {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+section.article .customer-area .customer-area__list li::before {
+  content: '-';
+  display: inline-block;
+  margin-right: 5px;
+}
+section.article .customer-area .customer-area__list li:nth-child(1),
+section.article .customer-area .customer-area__list li:nth-child(4) {
+  width: 221px;
+}
+section.article .customer-area .customer-area__list li:nth-child(1) > span,
+section.article .customer-area .customer-area__list li:nth-child(4) >span {
+  display: inline-block;
+  width: 95px;
+}
+section.article .customer-area .customer-area__list li:nth-child(2),
+section.article .customer-area .customer-area__list li:nth-child(5) {
+  width: 293px;
+}
+section.article .customer-area .customer-area__list li:nth-child(2) > span,
+section.article .customer-area .customer-area__list li:nth-child(5) > span{
+  display: inline-block;
+  width: 167px;
+}
+section.article .customer-area .customer-area__list li:nth-child(3) > span,
+section.article .customer-area .customer-area__list li:nth-child(6) > span {
+  display: inline-block;
+  width: 140px;
+}
+section.article .customer-area .customer-area__counsel {
+  /* display: flex; */
+  position: absolute;
+  width: 251px;
+  top: 27px;
+  right: 0;
+}
+section.article .customer-area .customer-area__counsel a {
+  display: inline-block;
+  position: relative;
+  margin: 8px 0 0 30px;
+  padding-right: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+section.article .customer-area .customer-area__counsel a::after {
+  content: '>';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+/* //CUSTOMER AREA */
