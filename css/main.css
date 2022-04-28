@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* COMMON */
 body {
   font-size: 16px;
@@ -175,6 +177,7 @@ header .gnb-area-wrap .inner ul.gnb li a {
   font-weight: 600;
 }
 /* GNG SUBMENU */
+/* 작업중 */
 header .gnb-area-wrap .inner ul.gnb li .gnb-sub {
   display: none;
 }
